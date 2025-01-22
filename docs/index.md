@@ -3,23 +3,25 @@
 layout: home
 
 hero:
-  name: "jason-work-book"
-  text: "A VitePress Site"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+  name: "程序员阿翔\r\n\tの工作日志"
+  # text: ""
+  tagline: "记录工作中遇到的问题与解决方案以及感兴趣的知识~"
+  # actions:
+  #   - theme: brand
+  #     text: GO
+  #     link: /markdown-examples
+  # - theme: alt
+  #   text: API Examples
+  #   link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 前端
+    details: vue3 / TS / JS / Element UI / 浏览器APIs ...
+    link: /frontend/
+  - title: 后端
+    details: C# / Autofac / AutoMapper ...
+    link: /backend/
+  - title: 运维
+    details: linux / nginx / docker ...
+    link: /devops/
 ---
-

@@ -6,7 +6,7 @@ export default withMermaid(
   defineConfig({
     title: "jason-work-book",
     description: "",
-    base: "/jason-work-book/",
+    // base: "/jason-work-book/",
     themeConfig: {
       nav: [{ text: "Home", link: "/" }],
       socialLinks: [

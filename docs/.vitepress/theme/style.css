@@ -246,3 +246,35 @@
     font-size: 1.5em;
   }
 }
+
+.content-container {
+  max-width: none !important;
+}
+
+.aside {
+  width: 10% !important;
+}
+
+/* @media (min-width: 1440px) {
+  .VPNavBar.has-sidebar .title {
+    padding-left: max(
+      32px,
+      calc((80% - (var(--vp-layout-max-width) - 64px)) / 2)
+    ) !important;
+    width: calc(
+      (80% - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) -
+        32px
+    ) !important;
+  }
+
+  .VPSidebar[data-v-6750ea26] {
+    padding-left: max(
+      32px,
+      calc((80% - (var(--vp-layout-max-width) - 64px)) / 2)
+    ) !important;
+    width: calc(
+      (80% - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) -
+        32px
+    ) !important;
+  }
+} */

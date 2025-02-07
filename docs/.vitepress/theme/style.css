@@ -43,6 +43,11 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
+@import "./vp-code.css";
+@import "./vp-code-title.css";
+@import "./blur.css";
+@import "./custom-block.css";
+@import "./blockquote.css";
 :root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
@@ -68,6 +73,12 @@
   --vp-c-danger-2: var(--vp-c-red-2);
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
+
+  --vp-c-brand: #3eaf7c;
+  --vp-c-brand-light: #4abf8a;
+  --vp-c-brand-lighter: #5ccf99;
+  --vp-c-brand-dark: #369f6f;
+  --vp-c-brand-darker: #2e8f62;
 }
 
 /**
@@ -140,4 +151,98 @@
 .VPImage {
   border-radius: 50%;
   overflow: hidden;
+}
+
+/* 主体内容样式 */
+.vp-doc {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* 标题样式优化 */
+.vp-doc h1 {
+  font-size: 2.2em;
+  margin-bottom: 1.2em;
+  border-bottom: 2px solid var(--vp-c-divider);
+  padding-bottom: 0.5em;
+}
+
+.vp-doc h2 {
+  font-size: 1.8em;
+  margin: 2em 0 1em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--vp-c-divider-light);
+}
+
+/* 代码块样式优化 */
+.vp-doc div[class*="language-"] {
+  border-radius: 8px;
+  margin: 1.2em 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 链接样式 */
+.vp-doc a {
+  text-decoration: none;
+  color: var(--vp-c-brand);
+  transition: color 0.2s;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-light);
+  text-decoration: underline;
+}
+
+/* 列表样式优化 */
+.vp-doc ul,
+.vp-doc ol {
+  padding-left: 1.5em;
+  margin: 1em 0;
+}
+
+.vp-doc li {
+  margin: 0.5em 0;
+}
+
+/* 表格样式优化 */
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.vp-doc tr:nth-child(2n) {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 12px 16px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* 引用块样式 */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand);
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 0 4px 4px 0;
+}
+
+/* 响应式设计优化 */
+@media (max-width: 768px) {
+  .vp-doc {
+    font-size: 15px;
+  }
+
+  .vp-doc h1 {
+    font-size: 1.8em;
+  }
+
+  .vp-doc h2 {
+    font-size: 1.5em;
+  }
 }

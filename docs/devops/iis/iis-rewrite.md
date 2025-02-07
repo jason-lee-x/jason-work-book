@@ -79,3 +79,11 @@ collapsed: false
    ```
 
 7. 启用 AAR <Badge type="danger" text="注意" /> ![alt text](iis-rewrite-01.png) ![alt text](iis-rewrite-02.png) ![alt text](iis-rewrite-03.png)
+
+### 禁用 ARR 的 Location 头重写
+
+| 方案               | 操作                                                                                               | 适用情况                     |
+| ------------------ | -------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **方法 1（推荐）** | 关闭 ARR 的 `Reverse rewrite host in response headers`                                             | IIS 全局配置，适用于所有请求 |
+| **方法 2（推荐）** | `web.config` 中 `<reverseRewriteHostInResponseHeaders>false</reverseRewriteHostInResponseHeaders>` | 只对特定站点生效             |
+| **方法 3**         | `Outbound Rules` 直接修改 `Location` 头                                                            | 适用于更复杂的 URL 处理      |

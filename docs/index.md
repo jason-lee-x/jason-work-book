@@ -4,8 +4,12 @@ layout: home
 
 hero:
   name: "程序员阿翔\r\n\tの工作日志"
-  # text: ""
-  tagline: "记录工作中遇到的问题与解决方案以及感兴趣的知识~"
+  #text: "记录工作中遇到的问题与解决方案以及感兴趣的知识~"
+  tagline: "C#开发工程师 / Vue开发工程师 / 热爱生活"
+  image:
+    # 首页右边的图片
+    src: "https://avatars.githubusercontent.com/u/47520063?u=a4b7e56bf8cc4d8fd5be32eacb6ed56dc305e3a5"
+    # 图片的描述
   # actions:
   #   - theme: brand
   #     text: GO
@@ -15,13 +19,16 @@ hero:
   #   link: /api-examples
 
 features:
-  - title: 前端
+  - icon: 👓
+    title: 前端
     details: vue3 / TS / JS / Element UI / 浏览器APIs ...
     link: /frontend/
-  - title: 后端
+  - icon: 💻
+    title: 后端
     details: C# / Autofac / AutoMapper ...
     link: /backend/
-  - title: 运维
+  - icon: 👷‍♀️
+    title: 运维
     details: linux / nginx / docker ...
     link: /devops/
 ---

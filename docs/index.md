@@ -19,6 +19,10 @@ hero:
   #   link: /api-examples
 
 features:
+  - icon: 🤖
+    title: AI
+    details: MCP / Agent / dify / Ollama ...
+    link: /ai/
   - icon: 👓
     title: 前端
     details: vue3 / TS / JS / Element UI / 浏览器APIs ...

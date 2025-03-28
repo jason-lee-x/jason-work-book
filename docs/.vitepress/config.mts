@@ -1,6 +1,16 @@
+import mdItCustomAttrs from "markdown-it-custom-attrs";
+import markdownItKatex from "markdown-it-katex";
 import AutoSidebar from "vite-plugin-vitepress-auto-sidebar";
 import { defineConfig } from "vitepress";
 import { withMermaid } from "vitepress-plugin-mermaid";
+
+// Markdown 插件配置
+const markdownConfig = (md: any) => {
+  md.use(mdItCustomAttrs, "image", {
+    "data-fancybox": "gallery",
+  });
+  md.use(markdownItKatex); // 启用 KaTeX 插件
+};
 
 export default withMermaid(
   defineConfig({
@@ -16,6 +26,10 @@ export default withMermaid(
         },
       ],
       logo: "https://avatars.githubusercontent.com/u/47520063?s=50&u=a4b7e56bf8cc4d8fd5be32eacb6ed56dc305e3a5",
+    },
+    // Markdown 配置
+    markdown: {
+      config: markdownConfig,
     },
     head: [
       [
